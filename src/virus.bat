@@ -9,7 +9,7 @@ IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
 ECHO msgbox "%msgboxBody%",0,"%msgboxTitle%">"%tmpmsgbox%"
 WSCRIPT "%tmpmsgbox%"
 webclient = New-Object System.Net.WebClient
-url = "links"
-file = "C:\Downloads\README.txt"
+url = "https://cdn.discordapp.com/attachments/800052087136190467/829393545436725258/READ-ME.txt"
+file = "C:\Desktop\READ-ME.txt"
 webclient.DownloadFile(url,file)
 pause
